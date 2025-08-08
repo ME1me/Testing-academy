@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing by Shikha mam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <img src="logo-white.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Cources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mt-5 mb-3">Gallery</h1>
+                    <p class="lead">Glimpses of our training sessions, certifications, and student achievements</p>
+                </div>
+            </div>
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center ">
+                    <li class="breadcrumb-item "><a href="home.html" class="text-black">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+
+                    <button type="submit" onclick="filterCardsGallery('all', this)"
+                        class="btn btn-outline-primary filter-btn-gallery">ALL</button>
+                    <button type="submit" onclick="filterCardsGallery('online', this)"
+                        class="btn btn-outline-primary filter-btn-gallery">ONLINE CLASSES</button>
+                    <button type="submit" onclick="filterCardsGallery('offline', this)"
+                        class="btn btn-outline-primary filter-btn-gallery">OFFLINE CLASSES</button>
+                    <button type="submit" onclick="filterCardsGallery('workshop', this)"
+                        class="btn btn-outline-primary filter-btn-gallery">WORKSHOPS</button>
+                    <button type="submit" onclick="filterCardsGallery('certificate', this)"
+                        class="btn btn-outline-primary filter-btn-gallery">CERTIFICATES</button>
+
+                </div>
+            </div>
+
+            <div class="row galleryImg align-items-center mt-5">
+                <div class="life col-lg-4 mb-4" data-category="offline">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_zr_LSy28KgLf3-MP7JXMskvd6pz1pqcsg&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="online">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvVqw3CFMX4h5xrqppNtgMgVzqvBSuQic7Vw&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="offline">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIsCOxl9dY8ndRVqBYSsCvMu1eUtwMcaSqg&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4  mb-4" data-category="online">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlEEP9txcydFOgDu_-c6AN8xUknS4WhzaAw&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="offline">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEV6ZGQdGyLdTfWWWksnqCENySl12MGgJniw&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="certificate">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7-irfCJ5CBBggflEi4V8Tc1uIH1eie7Bjg&s" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="online">
+                    <img src="https://wallpaperaccess.com/full/14158254.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="offline">
+                    <img src="https://wallpaperaccess.com/full/14158254.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="life col-lg-4 mb-4" data-category="workshop">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQHXNDjm14U7EvvYPUJG2AYH79sCaGqw6LQ&s" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fixed-contact-btn ">
+        <a href="contact.html" class="btn btn-lg btn-outline-dark bg-success text-black rounded ">
+            GET IN TOUCH </a>
+    </div>
+   <footer class="bg-dark text-white py-5 px-0">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Shikha Maam Testing Academy</h5>
+                    <p class="text">Empowering the next generation of software testers with
+                        industry-relevant skills and practical knowledge.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Popular Cources</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="courses.html" class="text-white text-decoration-none">Manual Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Selenium WebDriver</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">API Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Automation Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Mobile Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <!-- <p class="text-muted">
+                        <i class="fas fa-map-marker-alt"></i> 123 Tech Street, IT Hub, Bangalore - 560001
+                    </p> -->
+                    <p class="text-white">
+                        <i class="fas fa-phone"></i> +91 98765 43210
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope"></i> info@shikhamamtesting.com
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Shikha Maam Testing Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

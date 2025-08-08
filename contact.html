@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing by Shikha mam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <img src="logo-white.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Cources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mt-5 mb-3">Contact Us</h1>
+                    <p class="lead">Get in touch with us for course enrollment and inquiries</p>
+                </div>
+            </div>
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center ">
+                    <li class="breadcrumb-item "><a href="home.html" class="text-black">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contacts</li>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-4 align-items-stretch justify-content-center">
+                <!-- Contact Info -->
+                <div
+                    class="col-lg-5 bg-dark text-white rounded-4 p-5 d-flex flex-column justify-content-between shadow-lg">
+                    <div>
+                        <h1 class="mb-4"><i class="fa fa-headset me-2"></i>Get In Touch</h1>
+                        <p class="lead mb-4">Have questions? Reach out and we'll respond promptly.</p>
+                        <div class="mb-4">
+                            <h4><i class="fa fa-phone me-2"></i>Call us</h4>
+                            <p class="ms-4 mb-2 fs-5"><a href="tel:+918446395923"
+                                    class="text-white text-decoration-none">+91 8446395923</a></p>
+                        </div>
+                        <div class="mb-4">
+                            <h4><i class="fa fa-envelope me-2"></i>Email us</h4>
+                            <p class="ms-4 fs-5"><a href="mailto:info@shikhamamtesting.com"
+                                    class="text-white text-decoration-none">
+                                    info@shikhamamtesting.com</a></p>
+                        </div>
+                        <div class="mb-4">
+                            <h4><i class="fa fa-clock me-2"></i>Working Hours</h4>
+                            <ul class="ms-4 list-unstyled">
+                                <li>Mon-Fri: 9:00 AM - 6:00 PM</li>
+                                <li>Sat: 10:00 AM - 4:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Also follow us on</h5>
+                        <div class="social-links mt-2 mb-2">
+                            <a href="#" target="_blank" class="text-white me-3"><i
+                                    class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" target="_blank" class="text-white me-3"><i
+                                    class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#" target="_blank" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a href="#" target="_blank" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+<!-- form -->
+                <div class="col-lg-5 form-section-hover rounded p-4">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-12 mb-3">
+                                <h2>Send us a Message</h2>
+                                <label for="Name" class="form-label"> Name *</label>
+                                <input type="text" class="form-control" id="Name" name="Name" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid first name.
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid phone number.
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="course" class="form-label">Course of Interest</label>
+                                <select class="form-select" id="course" name="course">
+                                    <option value="">Select a course...</option>
+                                    <option value="manual">Manual Testing</option>
+                                    <option value="automation">Automation Testing</option>
+                                    <option value="api">API Testing</option>
+                                    <option value="performance">Performance Testing</option>
+                                    <option value="frameworks">Automation Frameworks</option>
+                                    <option value="complete">Complete Testing Bundle</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg submit-btn">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+<h1 class="display-5 fw-bold text-black mt-5 mb-3 text-center" >Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25235.206067133575!2d76.83961322053607!3d28.427812612142773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d6ad5abdad98b%3A0xeb13a7d0eb14cc49!2sDronacharya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1754632137820!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map mt-5 mb-5 w-100 h-200 rounded border border-dark "></iframe>
+        </div>
+        
+    </section>
+     <footer class="bg-dark text-white py-5 px-0">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Shikha Maam Testing Academy</h5>
+                    <p class="text">Empowering the next generation of software testers with
+                        industry-relevant skills and practical knowledge.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Popular Cources</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="courses.html" class="text-white text-decoration-none">Manual Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Selenium WebDriver</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">API Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Automation Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Mobile Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <!-- <p class="text-muted">
+                        <i class="fas fa-map-marker-alt"></i> 123 Tech Street, IT Hub, Bangalore - 560001
+                    </p> -->
+                    <p class="text-white">
+                        <i class="fas fa-phone"></i> +91 98765 43210
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope"></i> info@shikhamamtesting.com
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Shikha Maam Testing Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

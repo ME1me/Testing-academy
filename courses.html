@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing by Shikha mam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <img src="logo-white.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Cources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mt-5 mb-3">Our Courses</h1>
+                    <p class="lead">Choose from our comprehensive range of software testing courses</p>
+                </div>
+            </div>
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center ">
+                    <li class="breadcrumb-item "><a href="home.html" class="text-black">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+    <section class="  text-black py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-5 fw-bold mt-5 mb-3">Course Categories
+                    </h1>
+                    <p class="lead">Select a category to explore our specialized training programs
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="py-3">
+        <div class="container">
+
+            <div class="row">
+                <div class="col text-center">
+
+                    <button type="button" onclick="filterCardsCourses('all', this)"
+                        class="btn btn-outline-primary filter-btn active">ALL COURSES</button>
+                    <button type="button" onclick="filterCardsCourses('manual', this)"
+                        class="btn btn-outline-primary filter-btn">MANUAL TESTING</button>
+                    <button type="button" onclick="filterCardsCourses('automation', this)"
+                        class="btn btn-outline-primary filter-btn">AUTOMATION</button>
+                    <button type="button" onclick="filterCardsCourses('api', this)"
+                        class="btn btn-outline-primary filter-btn">API TESTING</button>
+                    <button type="button" onclick="filterCardsCourses('performance', this)"
+                        class="btn btn-outline-primary filter-btn">PERFORMANCE TESTING</button>
+
+                </div>
+            </div>
+            <div class="row py-3 mt-5">
+                <div class="life2 col-lg-6 mb-4" data-category="manual">
+                    <div class="card course-card h-100 ">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Manual Testing Fundamentals</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-bug fa-3x text-primary"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 6 Weeks | Fee: ₹15,000</h6>
+                            <p class="card-text mb-4">Master the fundamentals of software testing with comprehensive
+                                manual testing techniques and methodologies.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Basics of Software Testing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>STLC & SDLC Understanding</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Test Case Writing & Execution</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Bug Reporting & Tracking</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Test Documentation</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-primary btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <!-- Automation Testing Course -->
+                <div class="life2 col-lg-6 mb-4 " data-category="automation">
+                    <div class="card course-card h-100">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Automation Testing with Selenium</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-icon mb-3">
+                                <i class="fas fa-robot fa-3x text-success"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 8 Weeks | Fee: ₹25,000</h6>
+                            <p class="card-text mb-4">Learn automation testing with Selenium WebDriver, TestNG, and
+                                build robust automation frameworks.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Selenium WebDriver</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>TestNG Framework</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Maven & Build Tools</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Page Object Model</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Data Driven Testing</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-success btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Testing Course -->
+                <div class="life2 col-lg-6 mb-4 course-item " data-category="api">
+                    <div class="card course-card h-100">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">API Testing Mastery</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-icon mb-3">
+                                <i class="fas fa-exchange-alt fa-3x text-warning"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 5 Weeks | Fee: ₹18,000</h6>
+                            <p class="card-text mb-4">Master REST API testing with Postman and automation using modern
+                                API testing tools and frameworks.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>REST API Fundamentals</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Postman Advanced Features</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>API Automation Testing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>JSON & XML Handling</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>API Performance Testing</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-warning btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Testing Course -->
+                <div class="life2 col-lg-6 mb-4 course-item " data-category="performance">
+                    <div class="card course-card h-100">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Performance Testing with JMeter</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-icon mb-3">
+                                <i class="fas fa-tachometer-alt fa-3x text-info"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 6 Weeks | Fee: ₹22,000</h6>
+                            <p class="card-text mb-4">Learn performance testing concepts and master JMeter for load
+                                testing and performance analysis.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Performance Testing Concepts</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>JMeter Tool Mastery</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Load & Stress Testing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Performance Monitoring</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Report Generation</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-info btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Automation Frameworks -->
+                <div class="life2 col-lg-6 mb-4 course-item " data-category="automation">
+                    <div class="card course-card h-100">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Advanced Automation Frameworks</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-icon mb-3">
+                                <i class="fas fa-cogs fa-3x text-danger"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 10 Weeks | Fee: ₹35,000</h6>
+                            <p class="card-text mb-4">Build enterprise-level automation frameworks using advanced design
+                                patterns and industry best practices.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Framework Design Patterns</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Cucumber BDD Framework</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>CI/CD Integration</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Docker & Cloud Testing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Reporting & Analytics</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-danger btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complete Testing Bundle -->
+                <div class="life2 col-lg-6 mb-4 course-item " data-category="all">
+                    <div class="card course-card h-100">
+                        <div class="cource-header text-white">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Complete Testing Bundle</h5>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="course-icon mb-3">
+                                <i class="fas fa-graduation-cap fa-3x text-secondary"></i>
+                            </div>
+                            <h6 class="text-muted mb-3">Duration: 16 Weeks | Fee: ₹50,000 <span
+                                    class="text-decoration-line-through">₹80,000</span></h6>
+                            <p class="card-text mb-4">Complete software testing mastery program covering all aspects
+                                from manual to advanced automation testing.</p>
+                            <div class="course-topics mb-4">
+                                <h6 class="fw-bold">Key Topics:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>All Manual Testing Topics</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Selenium Automation</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>API Testing with Postman</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Performance Testing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Framework Development</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="contact.html" class="btn btn-secondary btn-block">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fixed-contact-btn ">
+        <a href="contact.html" class="btn btn-lg btn-outline-dark bg-success text-black rounded ">
+            GET IN TOUCH </a>
+    </div>
+     <footer class="bg-dark text-white py-5 px-0">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Shikha Maam Testing Academy</h5>
+                    <p class="text">Empowering the next generation of software testers with
+                        industry-relevant skills and practical knowledge.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Popular Cources</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="courses.html" class="text-white text-decoration-none">Manual Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Selenium WebDriver</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">API Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Automation Testing</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Mobile Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <!-- <p class="text-muted">
+                        <i class="fas fa-map-marker-alt"></i> 123 Tech Street, IT Hub, Bangalore - 560001
+                    </p> -->
+                    <p class="text-white">
+                        <i class="fas fa-phone"></i> +91 98765 43210
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope"></i> info@shikhamamtesting.com
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Shikha Maam Testing Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
